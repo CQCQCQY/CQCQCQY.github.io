@@ -47,25 +47,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo博客绑定到个人域名</title>
-    <url>/posts/undefined.html</url>
-    <content><![CDATA[<h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>推荐使用阿里云、腾讯云等</p>
-<h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><p>在阿里云里面使用域名解析</p>
-<p><img src="https://img-blog.csdnimg.cn/ab3d780261b34b62ae9cb74539e7fc18.png" alt="域名解析"></p>
-<p><img src="https://img-blog.csdnimg.cn/e5644ae1147a41188d352dd3513c44a4.png" alt="解析记录"></p>
-<h1 id="3-设置CNAME"><a href="#3-设置CNAME" class="headerlink" title="3 设置CNAME"></a>3 设置CNAME</h1><p>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：cqcqcqy.cn</p>
-<p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p>
-<p><img src="https://img-blog.csdnimg.cn/b99c6c02003949a0bbd2a59fea65058c.png" alt="github里面绑定域名"></p>
-<p>至此，就可以访问你解析的域名啦~</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>typora语法</title>
     <url>/posts/undefined.html</url>
     <content><![CDATA[<p>[toc]</p>
@@ -129,6 +110,25 @@
       </categories>
       <tags>
         <tag>typora</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo博客绑定到个人域名</title>
+    <url>/posts/undefined.html</url>
+    <content><![CDATA[<h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>推荐使用阿里云、腾讯云等</p>
+<h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><p>在阿里云里面使用域名解析</p>
+<p><img src="https://img-blog.csdnimg.cn/ab3d780261b34b62ae9cb74539e7fc18.png" alt="域名解析"></p>
+<p><img src="https://img-blog.csdnimg.cn/e5644ae1147a41188d352dd3513c44a4.png" alt="解析记录"></p>
+<h1 id="3-设置CNAME"><a href="#3-设置CNAME" class="headerlink" title="3 设置CNAME"></a>3 设置CNAME</h1><p>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：cqcqcqy.cn</p>
+<p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p>
+<p><img src="https://img-blog.csdnimg.cn/b99c6c02003949a0bbd2a59fea65058c.png" alt="github里面绑定域名"></p>
+<p>至此，就可以访问你解析的域名啦~</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>

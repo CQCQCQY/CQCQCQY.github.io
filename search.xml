@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>github+hexo搭建个人博客</title>
+    <url>/2022/06/06/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>[toc]</p>
+<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="下载安装git"><a href="#下载安装git" class="headerlink" title="下载安装git"></a>下载安装git</h2><p><a href="https://git-scm.com/download/win">git下载地址：</a><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+<h2 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h2><p><a href="http://nodejs.cn/download/">node.js下载地址：</a><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
+<h3 id="检查git和node-js是否安装成功"><a href="#检查git和node-js是否安装成功" class="headerlink" title="检查git和node.js是否安装成功"></a>检查git和node.js是否安装成功</h3><p><img src="https://img-blog.csdnimg.cn/7230e92dd8da471ea121d31202712ead.png" alt="git安装后"></p>
+<p>打开cmd</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version #查看git版本</span><br><span class="line">node -v #查看node版本</span><br><span class="line">npm -v #查看npm版本</span><br></pre></td></tr></table></figure>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="本地博客"><a href="#本地博客" class="headerlink" title="本地博客"></a>本地博客</h2><p>在桌面打开<code>git bash here</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init 文件夹名</span><br><span class="line">cd 文件夹名</span><br></pre></td></tr></table></figure>
+<p>其中文件夹名就是你以后博客要上传下载的文件夹，我个人命名为：<code>bolg</code>，然后扫描进入该文件夹<code>blog</code></p>
+<p>进行到这里，再进行下面的操作就可以在本地打开hexo的博客网站了</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clea</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>这些命令的作用，在文章下面会说到<br>接着，在浏览器中输入 localhost:4000 就可以看到生成的博客页面了。</p>
+<p>ctrl + c 可以关掉服务。</p>
+<h2 id="通过github搭建博客"><a href="#通过github搭建博客" class="headerlink" title="通过github搭建博客"></a>通过github搭建博客</h2><h3 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h3><p>1.首先，你先要有一个GitHub账户，去注册一个吧。</p>
+<p>2.注册完登录后，在GitHub.com中看到一个New repository，新建仓库。</p>
+<p>3.创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我github用户名是 CQCQCQY，所以我的叫 CQCQCQY.github.io</p>
+<h3 id="生成-SSH-添加到-github-仓库"><a href="#生成-SSH-添加到-github-仓库" class="headerlink" title="生成 SSH 添加到 github 仓库"></a>生成 SSH 添加到 github 仓库</h3><p>在<code>git bash here</code>中</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>其中，yourname就是你github的用户名，youremail就是你github的邮箱<br>检查上面步骤是否成功</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+<p>然后创建SSH,一路回车</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。这个文件夹就是在用户文件夹里面，有个<code>.ssh</code>文件夹，打开可以看到</p>
+<p><img src="https://img-blog.csdnimg.cn/486840c4e1b543779616ed4c2cd2421b.png" alt="ssh文件"><br>而后在 github 的 setting 中，找到 SSH keys 的设置选项，点击 New SSH key 把你的 id_rsa.pub 里面的信息复制进去。<br><img src="https://img-blog.csdnimg.cn/f60c97d75413495a946dd60e542948f6.png" alt="添加ssh"><br>之后，在 gitbash 中输入以下指令，查看是否 SSH 是否已绑定成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<h2 id="将-hexo-部署到-github"><a href="#将-hexo-部署到-github" class="headerlink" title="将 hexo 部署到 github"></a>将 hexo 部署到 github</h2><p>这一步，我们就可以将 hexo 和 github 关联起来，也就是将 hexo 生成的文章部署到 github 上，打开站点配置文件 _config.yml，翻到最后，进行如下修改即可，CQCQCQY改为你的 github 账户用户名。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: &#x27;https://github.com/CQCQCQY/CQCQCQY.github.io.git&#x27;</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>进行部署</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p><code>hexo clean</code> 清除了你之前生成的东西，可以用 <code>hexo cl</code></p>
+<p><code>hexo generate</code> 生成静态文章，可以用 <code>hexo g</code> 缩写</p>
+<p><code>hexo deploy</code> 部署文章，可以用 <code>hexo d</code> 缩写</p>
+<p>等到你收到 github 和 hexo 对接起来的邮件或者弹窗，到时候你访问 http:&#x2F;&#x2F;你的用户名.github.io 这个网站看到你自己的博客了！</p>
+<h1 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h1><p>可以通过 typora 新建 <code>.md</code> 文件，其中 typora 下载地址：<a href="https://download.typora.io/windows/typora-update-x64-1117.exe">https://download.typora.io/windows/typora-update-x64-1117.exe</a><br>把 <code>.md</code> 文件夹 <code>blog</code> 目录下的 <code>\blog\source\_posts中</code>，如图<br><img src="https://img-blog.csdnimg.cn/79db6a50fa8a4a97871371a453adde67.png" alt="上传文件到hexo和github"><br>然后在 <code>git bash here</code>，依次执行下面代码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/b73af6c68b0f421e811f08de99dc8af1.png" alt="上传操作"><br>参考自：<a href="https://segmentfault.com/q/1010000018159092">https://segmentfault.com/q/1010000018159092</a></p>
+<p>若出现下面错误，不要怕，应该是网络原因，重复上面三个命令应该就可以了<br><img src="https://img-blog.csdnimg.cn/da55c11ab1e6437db1e2e04196ef9326.png" alt="128错误"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>typora语法</title>
     <url>/2022/06/06/typora%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<p>[toc]</p>
@@ -65,51 +111,5 @@
       <tags>
         <tag>typora</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>github+hexo搭建个人博客</title>
-    <url>/2022/06/06/github+hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="下载安装git"><a href="#下载安装git" class="headerlink" title="下载安装git"></a>下载安装git</h2><p><a href="https://git-scm.com/download/win">git下载地址：</a><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
-<h2 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h2><p><a href="http://nodejs.cn/download/">node.js下载地址：</a><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
-<h3 id="检查git和node-js是否安装成功"><a href="#检查git和node-js是否安装成功" class="headerlink" title="检查git和node.js是否安装成功"></a>检查git和node.js是否安装成功</h3><p><img src="https://img-blog.csdnimg.cn/7230e92dd8da471ea121d31202712ead.png" alt="git安装后"></p>
-<p>打开cmd</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version #查看git版本</span><br><span class="line">node -v #查看node版本</span><br><span class="line">npm -v #查看npm版本</span><br></pre></td></tr></table></figure>
-<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="本地博客"><a href="#本地博客" class="headerlink" title="本地博客"></a>本地博客</h2><p>在桌面打开<code>git bash here</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init 文件夹名</span><br><span class="line">cd 文件夹名</span><br></pre></td></tr></table></figure>
-<p>其中文件夹名就是你以后博客要上传下载的文件夹，我个人命名为：<code>bolg</code>，然后扫描进入该文件夹<code>blog</code></p>
-<p>进行到这里，再进行下面的操作就可以在本地打开hexo的博客网站了</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clea</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-<p>这些命令的作用，在文章下面会说到<br>接着，在浏览器中输入 localhost:4000 就可以看到生成的博客页面了。</p>
-<p>ctrl + c 可以关掉服务。</p>
-<h2 id="通过github搭建博客"><a href="#通过github搭建博客" class="headerlink" title="通过github搭建博客"></a>通过github搭建博客</h2><h3 id="GitHub创建个人仓库"><a href="#GitHub创建个人仓库" class="headerlink" title="GitHub创建个人仓库"></a>GitHub创建个人仓库</h3><p>1.首先，你先要有一个GitHub账户，去注册一个吧。</p>
-<p>2.注册完登录后，在GitHub.com中看到一个New repository，新建仓库。</p>
-<p>3.创建一个和你用户名相同的仓库，后面加.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io，其中xxx就是你注册GitHub的用户名。我github用户名是 CQCQCQY，所以我的叫 CQCQCQY.github.io</p>
-<h3 id="生成-SSH-添加到-github-仓库"><a href="#生成-SSH-添加到-github-仓库" class="headerlink" title="生成 SSH 添加到 github 仓库"></a>生成 SSH 添加到 github 仓库</h3><p>在<code>git bash here</code>中</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<p>其中，yourname就是你github的用户名，youremail就是你github的邮箱<br>检查上面步骤是否成功</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
-<p>然后创建SSH,一路回车</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
-<p>这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。这个文件夹就是在用户文件夹里面，有个<code>.ssh</code>文件夹，打开可以看到</p>
-<p><img src="https://img-blog.csdnimg.cn/486840c4e1b543779616ed4c2cd2421b.png" alt="ssh文件"><br>而后在 github 的 setting 中，找到 SSH keys 的设置选项，点击 New SSH key 把你的 id_rsa.pub 里面的信息复制进去。<br><img src="https://img-blog.csdnimg.cn/f60c97d75413495a946dd60e542948f6.png" alt="添加ssh"><br>之后，在 gitbash 中输入以下指令，查看是否 SSH 是否已绑定成功。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<h2 id="将-hexo-部署到-github"><a href="#将-hexo-部署到-github" class="headerlink" title="将 hexo 部署到 github"></a>将 hexo 部署到 github</h2><p>这一步，我们就可以将 hexo 和 github 关联起来，也就是将 hexo 生成的文章部署到 github 上，打开站点配置文件 _config.yml，翻到最后，进行如下修改即可，CQCQCQY改为你的 github 账户用户名。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repo: &#x27;https://github.com/CQCQCQY/CQCQCQY.github.io.git&#x27;</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
-<p>这个时候需要先安装deploy-git ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>进行部署</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p><code>hexo clean</code> 清除了你之前生成的东西，可以用 <code>hexo cl</code></p>
-<p><code>hexo generate</code> 生成静态文章，可以用 <code>hexo g</code> 缩写</p>
-<p><code>hexo deploy</code> 部署文章，可以用 <code>hexo d</code> 缩写</p>
-<p>等到你收到 github 和 hexo 对接起来的邮件或者弹窗，到时候你访问 http:&#x2F;&#x2F;你的用户名.github.io 这个网站看到你自己的博客了！</p>
-<h1 id="上传文章"><a href="#上传文章" class="headerlink" title="上传文章"></a>上传文章</h1><p>可以通过 typora 新建 <code>.md</code> 文件，其中 typora 下载地址：<a href="https://download.typora.io/windows/typora-update-x64-1117.exe">https://download.typora.io/windows/typora-update-x64-1117.exe</a><br>把 <code>.md</code> 文件夹 <code>blog</code> 目录下的 <code>\blog\source\_posts中</code>，如图<br><img src="https://img-blog.csdnimg.cn/79db6a50fa8a4a97871371a453adde67.png" alt="上传文件到hexo和github"><br>然后在 <code>git bash here</code>，依次执行下面代码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/b73af6c68b0f421e811f08de99dc8af1.png" alt="上传操作"><br>参考自：<a href="https://segmentfault.com/q/1010000018159092">https://segmentfault.com/q/1010000018159092</a></p>
-<p>若出现下面错误，不要怕，应该是网络原因，重复上面三个命令应该就可以了<br><img src="https://img-blog.csdnimg.cn/da55c11ab1e6437db1e2e04196ef9326.png" alt="128错误"></p>
-]]></content>
   </entry>
 </search>

@@ -20,28 +20,36 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="[toc] 1.字体编辑1.1 标题123456# 一级标题 快捷键Ctrl+1## 二级标题 快捷键Ctrl+2### 三级标题 快捷键Ctrl+3#### 四级标题 快捷键Ctrl+4##### 五级标题 快捷键Ctrl+5###### 六级标题 快捷键Ctrl+6  1.2 字体大小">
+    <meta name="description" content="jdk的下载、安装和配置下载到jdk官网下载对应的版本：官网：https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;downloads&#x2F;archive&#x2F; 安装安装一直点next就可以，期间可以 更改jdk的安装目录：，这个安装目录需要在配置系统环境的时候用上。例如，我的安装路径是C:\jdk">
 <meta property="og:type" content="article">
-<meta property="og:title" content="typora语法">
+<meta property="og:title" content="安装jdk和idea">
 <meta property="og:url" content="http://example.com/posts/undefined.html">
 <meta property="og:site_name" content="CQCQCQY">
-<meta property="og:description" content="[toc] 1.字体编辑1.1 标题123456# 一级标题 快捷键Ctrl+1## 二级标题 快捷键Ctrl+2### 三级标题 快捷键Ctrl+3#### 四级标题 快捷键Ctrl+4##### 五级标题 快捷键Ctrl+5###### 六级标题 快捷键Ctrl+6  1.2 字体大小">
+<meta property="og:description" content="jdk的下载、安装和配置下载到jdk官网下载对应的版本：官网：https:&#x2F;&#x2F;www.oracle.com&#x2F;java&#x2F;technologies&#x2F;downloads&#x2F;archive&#x2F; 安装安装一直点next就可以，期间可以 更改jdk的安装目录：，这个安装目录需要在配置系统环境的时候用上。例如，我的安装路径是C:\jdk">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-06T09:12:33.173Z">
-<meta property="article:modified_time" content="2022-06-06T11:36:51.472Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png">
+<meta property="article:published_time" content="2022-06-06T12:25:52.000Z">
+<meta property="article:modified_time" content="2022-06-06T12:28:00.255Z">
 <meta property="article:author" content="CQCQCQY">
-<meta property="article:tag" content="typora">
+<meta property="article:tag" content="jdk">
+<meta property="article:tag" content="idea">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png">
 
 
 <link rel="canonical" href="http://example.com/posts/undefined.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/posts/undefined.html","path":"posts/undefined.html","title":"typora语法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/posts/undefined.html","path":"posts/undefined.html","title":"安装jdk和idea"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>typora语法 | CQCQCQY</title>
+<title>安装jdk和idea | CQCQCQY</title>
   
 
 
@@ -145,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E5%AD%97%E4%BD%93%E7%BC%96%E8%BE%91"><span class="nav-number">1.</span> <span class="nav-text">1.字体编辑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E6%A0%87%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 字体大小</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E5%AD%97%E4%BD%93%E5%8A%A0%E7%B2%97"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 字体加粗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E6%96%9C%E4%BD%93"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 斜体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 下划线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-%E6%96%87%E6%9C%AC%E5%B1%85%E4%B8%AD"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 文本居中</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-%E6%96%87%E5%AD%97%E9%AB%98%E4%BA%AE"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 文字高亮</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E5%88%97%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">2. 列表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 有序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 无序列表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E6%8F%92%E5%85%A5"><span class="nav-number">3.</span> <span class="nav-text">3. 插入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 插入代码块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 插入链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 插入图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 插入表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-%E6%8F%92%E5%85%A5%E5%88%86%E9%9A%94%E7%AC%A6"><span class="nav-number">3.5.</span> <span class="nav-text">3.5 插入分隔符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-%E6%8F%92%E5%85%A5%E8%A1%A8%E6%83%85"><span class="nav-number">3.6.</span> <span class="nav-text">3. 6 插入表情</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-%E6%8F%92%E5%85%A5%E7%9B%AE%E5%BD%95"><span class="nav-number">3.7.</span> <span class="nav-text">3.7 插入目录</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#jdk%E7%9A%84%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">jdk的下载、安装和配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">1.2.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-number">1.3.</span> <span class="nav-text">配置环境变量</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-JAVA-HOME"><span class="nav-number">1.3.1.</span> <span class="nav-text">配置 JAVA_HOME</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-Path"><span class="nav-number">1.3.2.</span> <span class="nav-text">配置 Path</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E9%AA%8Cjdk%E6%98%AF%E5%90%A6%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F"><span class="nav-number">1.3.3.</span> <span class="nav-text">检验jdk是否安装成功</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85idea"><span class="nav-number">2.</span> <span class="nav-text">下载安装idea</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#idea%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85%E5%8F%AF%E4%BB%A5%E5%8F%82%E8%80%83%E8%BF%99%E7%AF%87%E6%96%87%E7%AB%A0"><span class="nav-number">2.1.</span> <span class="nav-text">idea下载和安装可以参考这篇文章</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEA%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8Cdebug%E8%B0%83%E8%AF%95"><span class="nav-number">3.</span> <span class="nav-text">IDEA如何进行debug调试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IDEA%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E5%BC%8F"><span class="nav-number">4.</span> <span class="nav-text">IDEA创建项目的三种方式</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -247,12 +255,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="typora语法 | CQCQCQY">
+      <meta itemprop="name" content="安装jdk和idea | CQCQCQY">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          typora语法
+          安装jdk和idea
         </h1>
 
         <div class="post-meta-container">
@@ -264,7 +272,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-06-06 17:12:33 / 修改时间：19:36:51" itemprop="dateCreated datePublished" datetime="2022-06-06T17:12:33+08:00">2022-06-06</time>
+      <time title="创建时间：2022-06-06 20:25:52 / 修改时间：20:28:00" itemprop="dateCreated datePublished" datetime="2022-06-06T20:25:52+08:00">2022-06-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -272,12 +280,12 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/typora/" itemprop="url" rel="index"><span itemprop="name">typora</span></a>
+          <a href="/categories/%E5%AE%89%E8%A3%85%E4%B8%8B%E8%BD%BD/" itemprop="url" rel="index"><span itemprop="name">安装下载</span></a>
         </span>
     </span>
 
   
-    <span id="/posts/undefined.html" class="post-meta-item leancloud_visitors" data-flag-title="typora语法" title="阅读次数">
+    <span id="/posts/undefined.html" class="post-meta-item leancloud_visitors" data-flag-title="安装jdk和idea" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -300,61 +308,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>[toc]</p>
-<h1 id="1-字体编辑"><a href="#1-字体编辑" class="headerlink" title="1.字体编辑"></a>1.字体编辑</h1><h2 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题 快捷键Ctrl+1</span><br><span class="line">## 二级标题 快捷键Ctrl+2</span><br><span class="line">### 三级标题 快捷键Ctrl+3</span><br><span class="line">#### 四级标题 快捷键Ctrl+4</span><br><span class="line">##### 五级标题 快捷键Ctrl+5</span><br><span class="line">###### 六级标题 快捷键Ctrl+6</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2-字体大小"><a href="#1-2-字体大小" class="headerlink" title="1.2 字体大小"></a>1.2 字体大小</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：Ctrl+数字</span><br></pre></td></tr></table></figure>
-
-<p>例如：我的字体是10</p>
-<h2 id="1-3-字体加粗"><a href="#1-3-字体加粗" class="headerlink" title="1.3 字体加粗"></a>1.3 字体加粗</h2><p><strong>加粗的快捷键是 Ctrl+b</strong></p>
-<p>也可以是** <strong>加粗内容</strong> **</p>
-<h2 id="1-4-斜体"><a href="#1-4-斜体" class="headerlink" title="1.4 斜体"></a>1.4 斜体</h2><p>斜体的操作是  * <em>斜体的内容</em> *</p>
-<h2 id="1-5-删除线"><a href="#1-5-删除线" class="headerlink" title="1.5 删除线"></a>1.5 删除线</h2><p>删除线的操作是 ~~ <del>删除的内容</del> ~~</p>
-<h2 id="1-6-下划线"><a href="#1-6-下划线" class="headerlink" title="1.6 下划线"></a>1.6 下划线</h2><p>快捷键是 Ctrl+u</p>
-<p>也可以 <u><u>下划线内容</u></u></p>
-<h2 id="1-7-文本居中"><a href="#1-7-文本居中" class="headerlink" title="1.7 文本居中"></a>1.7 文本居中</h2><p>操作是 <center> 居中的内容 </center>，下面是示例</p>
-<center>用center居中啦</center>
-
-<h2 id="1-8-文字高亮"><a href="#1-8-文字高亮" class="headerlink" title="1.8 文字高亮"></a>1.8 文字高亮</h2><p>高亮操作是 &#x3D;&#x3D; &#x3D;&#x3D;高亮文字&#x3D;&#x3D; &#x3D;&#x3D;</p>
-<h1 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h1><h2 id="2-1-有序列表"><a href="#2-1-有序列表" class="headerlink" title="2.1 有序列表"></a>2.1 有序列表</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">操作：数字+英文小数点(.)+空格</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>第一个</li>
-<li>第二个</li>
-</ol>
-<h2 id="2-2-无序列表"><a href="#2-2-无序列表" class="headerlink" title="2.2 无序列表"></a>2.2 无序列表</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">操作：- +空格 或 * + 空格</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>一个</li>
-<li>两个</li>
-</ul>
-<h1 id="3-插入"><a href="#3-插入" class="headerlink" title="3. 插入"></a>3. 插入</h1><h2 id="3-1-插入代码块"><a href="#3-1-插入代码块" class="headerlink" title="3.1 插入代码块"></a>3.1 插入代码块</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键：shift+~~~``</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-2-插入链接"><a href="#3-2-插入链接" class="headerlink" title="3.2 插入链接"></a>3.2 插入链接</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">操 作:Ctrl+k弹出后，输入 [输入标题名](输入链接地址) 即可</span><br><span class="line">示 例1：[这里是我的博客](https://cqcqcqy.github.io/)</span><br><span class="line">示 例2：这是 [百度一下，你就知道](https://www.baidu.com/ &quot;百度&quot;) 的链接.  </span><br><span class="line">示 例3：这是 [github][1] 的链接.  </span><br><span class="line">       [1]: https://github.com/ &quot;github&quot;</span><br><span class="line">ps：按住ctrl点击链接可直接打开</span><br></pre></td></tr></table></figure>
-
-<p><a href="%5BCQCQCQY%5D(https://cqcqcqy.github.io/)">这里是我的博客</a></p>
-<p>这是<a target="_blank" rel="noopener" href="https://cqcqcqy.github.io/">百度</a>的链接</p>
-<p>这是[github][1]的链接.</p>
-<p>[1]: <a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a>	“github”</p>
-<h2 id="3-3-插入图片"><a href="#3-3-插入图片" class="headerlink" title="3.3 插入图片"></a>3.3 插入图片</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">操作：直接拖动  或 ctrl+shift+i(相对路径地址)</span><br><span class="line">示例：![](C:\1.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>![插入图片示例](D:\我的东西\壁纸\壁纸\image (23).jpg)</p>
-<h2 id="3-4-插入表格"><a href="#3-4-插入表格" class="headerlink" title="3.4 插入表格"></a>3.4 插入表格</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">快捷键：ctrl+t</span><br><span class="line">示 例：按完快捷键后，弹出下图，选择对应的行和列，点击确定即可。</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-5-插入分隔符"><a href="#3-5-插入分隔符" class="headerlink" title="3.5 插入分隔符"></a>3.5 插入分隔符</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">操作：--- + enter  或者 *** + enter</span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<center>上面就是分隔符</center>
-
-<h2 id="3-6-插入表情"><a href="#3-6-插入表情" class="headerlink" title="3. 6 插入表情"></a>3. 6 插入表情</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">操作： ：+ 单词 +:</span><br><span class="line">示例： :smile:</span><br><span class="line">      :cry:</span><br></pre></td></tr></table></figure>
-
-<p>:smile:</p>
-<p>:cry:</p>
-<h2 id="3-7-插入目录"><a href="#3-7-插入目录" class="headerlink" title="3.7 插入目录"></a>3.7 插入目录</h2><p>操作：[toc]+enter</p>
-<p>[toc]</p>
+        <h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>
+<h3 id="配置-JAVA-HOME"><a href="#配置-JAVA-HOME" class="headerlink" title="配置 JAVA_HOME"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>JAVA_HOME</strong></font></h3><p>在<font face="微软雅黑" color=#FF0000 size=3> <strong>系统变量</strong></font>中，新建JAVA_HOME，然后把我们jdk的安装根目录放上去</p>
+<p><img src="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png" alt="java_home jdk根目录"></p>
+<h3 id="配置-Path"><a href="#配置-Path" class="headerlink" title="配置 Path"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>Path</strong></font></h3><p>在系统变量中，我们找到Path编辑，将刚刚新建的JAVA_HOME变量加上bin目录设置到PATH中，即是新建一个，添加上：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; </code></p>
+<p><img src="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png" alt="配置jdkpath"></p>
+<h3 id="检验jdk是否安装成功"><a href="#检验jdk是否安装成功" class="headerlink" title="检验jdk是否安装成功"></a>检验jdk是否安装成功</h3><p>打开cmd，输入<code>java -version</code><br><img src="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png" alt="java -version"><br>输入 <code>java</code><br><img src="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png" alt="java输入"><br>输入<code>javac</code><br><img src="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png" alt="输入javac"><br>若都以上三种相关信息，则说明jdk安装成功；如果没有出现以上情况，可以重新检查一下配置环境那里。</p>
+<h1 id="下载安装idea"><a href="#下载安装idea" class="headerlink" title="下载安装idea"></a>下载安装idea</h1><h2 id="idea下载和安装可以参考这篇文章"><a href="#idea下载和安装可以参考这篇文章" class="headerlink" title="idea下载和安装可以参考这篇文章"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/CQCQCQY/article/details/121300830">idea下载和安装可以参考这篇文章</a></h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/CQCQCQY/article/details/121300830">https://blog.csdn.net/CQCQCQY/article/details/121300830</a></p>
+<h1 id="IDEA如何进行debug调试"><a href="#IDEA如何进行debug调试" class="headerlink" title="IDEA如何进行debug调试"></a>IDEA如何进行debug调试</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/mjh1667002013/article/details/114750192">debug参考链接：</a><a target="_blank" rel="noopener" href="https://blog.csdn.net/mjh1667002013/article/details/114750192">https://blog.csdn.net/mjh1667002013/article/details/114750192</a></p>
+<h1 id="IDEA创建项目的三种方式"><a href="#IDEA创建项目的三种方式" class="headerlink" title="IDEA创建项目的三种方式"></a>IDEA创建项目的三种方式</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50034122/article/details/118754521">创建项目：</a><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50034122/article/details/118754521">https://blog.csdn.net/weixin_50034122/article/details/118754521</a></p>
 
     </div>
 
@@ -372,7 +336,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://example.com/posts/undefined.html" title="typora语法">http://example.com/posts/undefined.html</a>
+      <a href="http://example.com/posts/undefined.html" title="安装jdk和idea">http://example.com/posts/undefined.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -381,20 +345,21 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/typora/" rel="tag"># typora</a>
+              <a href="/tags/jdk/" rel="tag"># jdk</a>
+              <a href="/tags/idea/" rel="tag"># idea</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/posts/undefined.html" rel="prev" title="github+hexo搭建个人博客">
-                  <i class="fa fa-chevron-left"></i> github+hexo搭建个人博客
+                <a href="/posts/undefined.html" rel="prev" title="typora语法">
+                  <i class="fa fa-chevron-left"></i> typora语法
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/posts/undefined.html" rel="next" title="安装jdk和idea">
-                  安装jdk和idea <i class="fa fa-chevron-right"></i>
+                <a href="/posts/undefined.html" rel="next" title="hexo博客绑定到个人域名">
+                  hexo博客绑定到个人域名 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

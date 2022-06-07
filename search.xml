@@ -66,6 +66,29 @@
       </tags>
   </entry>
   <entry>
+    <title>安装jdk和idea</title>
+    <url>/posts/1c2a6d1d.html</url>
+    <content><![CDATA[<h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>
+<h3 id="配置-JAVA-HOME"><a href="#配置-JAVA-HOME" class="headerlink" title="配置 JAVA_HOME"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>JAVA_HOME</strong></font></h3><p>在<font face="微软雅黑" color=#FF0000 size=3> <strong>系统变量</strong></font>中，新建JAVA_HOME，然后把我们jdk的安装根目录放上去</p>
+<p><img src="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png" alt="java_home jdk根目录"></p>
+<h3 id="配置-Path"><a href="#配置-Path" class="headerlink" title="配置 Path"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>Path</strong></font></h3><p>在系统变量中，我们找到Path编辑，将刚刚新建的JAVA_HOME变量加上bin目录设置到PATH中，即是新建一个，添加上：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; </code></p>
+<p><img src="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png" alt="配置jdkpath"></p>
+<h3 id="检验jdk是否安装成功"><a href="#检验jdk是否安装成功" class="headerlink" title="检验jdk是否安装成功"></a>检验jdk是否安装成功</h3><p>打开cmd，输入<code>java -version</code><br><img src="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png" alt="java -version"><br>输入 <code>java</code><br><img src="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png" alt="java输入"><br>输入<code>javac</code><br><img src="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png" alt="输入javac"><br>若都以上三种相关信息，则说明jdk安装成功；如果没有出现以上情况，可以重新检查一下配置环境那里。</p>
+<h1 id="下载安装idea"><a href="#下载安装idea" class="headerlink" title="下载安装idea"></a>下载安装idea</h1><h2 id="idea下载和安装可以参考这篇文章"><a href="#idea下载和安装可以参考这篇文章" class="headerlink" title="idea下载和安装可以参考这篇文章"></a><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">idea下载和安装可以参考这篇文章</a></h2><p><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">https://blog.csdn.net/CQCQCQY/article/details/121300830</a></p>
+<h1 id="IDEA如何进行debug调试"><a href="#IDEA如何进行debug调试" class="headerlink" title="IDEA如何进行debug调试"></a>IDEA如何进行debug调试</h1><p><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">debug参考链接：</a><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">https://blog.csdn.net/mjh1667002013/article/details/114750192</a></p>
+<h1 id="IDEA创建项目的三种方式"><a href="#IDEA创建项目的三种方式" class="headerlink" title="IDEA创建项目的三种方式"></a>IDEA创建项目的三种方式</h1><p><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">创建项目：</a><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">https://blog.csdn.net/weixin_50034122/article/details/118754521</a></p>
+]]></content>
+      <categories>
+        <category>安装下载</category>
+      </categories>
+      <tags>
+        <tag>jdk</tag>
+        <tag>idea</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>typora语法</title>
     <url>/posts/3a526c11.html</url>
     <content><![CDATA[<p>[toc]</p>
@@ -129,29 +152,6 @@
       </categories>
       <tags>
         <tag>typora</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装jdk和idea</title>
-    <url>/posts/1c2a6d1d.html</url>
-    <content><![CDATA[<h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>
-<h3 id="配置-JAVA-HOME"><a href="#配置-JAVA-HOME" class="headerlink" title="配置 JAVA_HOME"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>JAVA_HOME</strong></font></h3><p>在<font face="微软雅黑" color=#FF0000 size=3> <strong>系统变量</strong></font>中，新建JAVA_HOME，然后把我们jdk的安装根目录放上去</p>
-<p><img src="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png" alt="java_home jdk根目录"></p>
-<h3 id="配置-Path"><a href="#配置-Path" class="headerlink" title="配置 Path"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>Path</strong></font></h3><p>在系统变量中，我们找到Path编辑，将刚刚新建的JAVA_HOME变量加上bin目录设置到PATH中，即是新建一个，添加上：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; </code></p>
-<p><img src="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png" alt="配置jdkpath"></p>
-<h3 id="检验jdk是否安装成功"><a href="#检验jdk是否安装成功" class="headerlink" title="检验jdk是否安装成功"></a>检验jdk是否安装成功</h3><p>打开cmd，输入<code>java -version</code><br><img src="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png" alt="java -version"><br>输入 <code>java</code><br><img src="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png" alt="java输入"><br>输入<code>javac</code><br><img src="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png" alt="输入javac"><br>若都以上三种相关信息，则说明jdk安装成功；如果没有出现以上情况，可以重新检查一下配置环境那里。</p>
-<h1 id="下载安装idea"><a href="#下载安装idea" class="headerlink" title="下载安装idea"></a>下载安装idea</h1><h2 id="idea下载和安装可以参考这篇文章"><a href="#idea下载和安装可以参考这篇文章" class="headerlink" title="idea下载和安装可以参考这篇文章"></a><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">idea下载和安装可以参考这篇文章</a></h2><p><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">https://blog.csdn.net/CQCQCQY/article/details/121300830</a></p>
-<h1 id="IDEA如何进行debug调试"><a href="#IDEA如何进行debug调试" class="headerlink" title="IDEA如何进行debug调试"></a>IDEA如何进行debug调试</h1><p><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">debug参考链接：</a><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">https://blog.csdn.net/mjh1667002013/article/details/114750192</a></p>
-<h1 id="IDEA创建项目的三种方式"><a href="#IDEA创建项目的三种方式" class="headerlink" title="IDEA创建项目的三种方式"></a>IDEA创建项目的三种方式</h1><p><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">创建项目：</a><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">https://blog.csdn.net/weixin_50034122/article/details/118754521</a></p>
-]]></content>
-      <categories>
-        <category>安装下载</category>
-      </categories>
-      <tags>
-        <tag>jdk</tag>
-        <tag>idea</tag>
       </tags>
   </entry>
 </search>

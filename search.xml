@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>github+hexo搭建个人博客</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/85811f6c.html</url>
     <content><![CDATA[<p>[toc]</p>
 <h1 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h1><h2 id="下载安装git"><a href="#下载安装git" class="headerlink" title="下载安装git"></a>下载安装git</h2><p><a href="https://git-scm.com/download/win">git下载地址：</a><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
 <h2 id="下载安装node-js"><a href="#下载安装node-js" class="headerlink" title="下载安装node.js"></a>下载安装node.js</h2><p><a href="http://nodejs.cn/download/">node.js下载地址：</a><a href="http://nodejs.cn/download/">http://nodejs.cn/download/</a></p>
@@ -48,7 +48,7 @@
   </entry>
   <entry>
     <title>hexo博客绑定到个人域名</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/56d0b0fe.html</url>
     <content><![CDATA[<h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>推荐使用阿里云、腾讯云等</p>
 <h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><p>在阿里云里面使用域名解析</p>
 <p><img src="https://img-blog.csdnimg.cn/ab3d780261b34b62ae9cb74539e7fc18.png" alt="域名解析"></p>
@@ -67,7 +67,7 @@
   </entry>
   <entry>
     <title>typora语法</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/3a526c11.html</url>
     <content><![CDATA[<p>[toc]</p>
 <h1 id="1-字体编辑"><a href="#1-字体编辑" class="headerlink" title="1.字体编辑"></a>1.字体编辑</h1><h2 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 一级标题 快捷键Ctrl+1</span><br><span class="line">## 二级标题 快捷键Ctrl+2</span><br><span class="line">### 三级标题 快捷键Ctrl+3</span><br><span class="line">#### 四级标题 快捷键Ctrl+4</span><br><span class="line">##### 五级标题 快捷键Ctrl+5</span><br><span class="line">###### 六级标题 快捷键Ctrl+6</span><br></pre></td></tr></table></figure>
 
@@ -133,7 +133,7 @@
   </entry>
   <entry>
     <title>安装jdk和idea</title>
-    <url>/posts/undefined.html</url>
+    <url>/posts/1c2a6d1d.html</url>
     <content><![CDATA[<h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
 <h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>

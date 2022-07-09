@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo博客绑定到个人域名</title>
+    <url>/posts/56d0b0fe.html</url>
+    <content><![CDATA[<h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>推荐使用阿里云、腾讯云等</p>
+<h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><p>在阿里云里面使用域名解析</p>
+<p><img src="https://img-blog.csdnimg.cn/ab3d780261b34b62ae9cb74539e7fc18.png" alt="域名解析"></p>
+<p><img src="https://img-blog.csdnimg.cn/e5644ae1147a41188d352dd3513c44a4.png" alt="解析记录"></p>
+<h1 id="3-设置CNAME"><a href="#3-设置CNAME" class="headerlink" title="3 设置CNAME"></a>3 设置CNAME</h1><p>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：cqcqcqy.cn</p>
+<p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p>
+<p><img src="https://img-blog.csdnimg.cn/b99c6c02003949a0bbd2a59fea65058c.png" alt="github里面绑定域名"></p>
+<p>至此，就可以访问你解析的域名啦~</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>typora语法</title>
+    <url>/posts/3a526c11.html</url>
+    <content><![CDATA[<p>[toc]</p>
+<h1 id="1-字体编辑"><a href="#1-字体编辑" class="headerlink" title="1.字体编辑"></a>1.字体编辑</h1><h2 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 一级标题 快捷键Ctrl+1</span><br><span class="line">## 二级标题 快捷键Ctrl+2</span><br><span class="line">### 三级标题 快捷键Ctrl+3</span><br><span class="line">#### 四级标题 快捷键Ctrl+4</span><br><span class="line">##### 五级标题 快捷键Ctrl+5</span><br><span class="line">###### 六级标题 快捷键Ctrl+6</span><br></pre></td></tr></table></figure>
+
+<h2 id="1-2-字体大小"><a href="#1-2-字体大小" class="headerlink" title="1.2 字体大小"></a>1.2 字体大小</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：Ctrl+数字</span><br></pre></td></tr></table></figure>
+
+<p>例如：我的字体是10</p>
+<h2 id="1-3-字体加粗"><a href="#1-3-字体加粗" class="headerlink" title="1.3 字体加粗"></a>1.3 字体加粗</h2><p><strong>加粗的快捷键是 Ctrl+b</strong></p>
+<p>也可以是** <strong>加粗内容</strong> **</p>
+<h2 id="1-4-斜体"><a href="#1-4-斜体" class="headerlink" title="1.4 斜体"></a>1.4 斜体</h2><p>斜体的操作是  * <em>斜体的内容</em> *</p>
+<h2 id="1-5-删除线"><a href="#1-5-删除线" class="headerlink" title="1.5 删除线"></a>1.5 删除线</h2><p>删除线的操作是 ~~ <del>删除的内容</del> ~~</p>
+<h2 id="1-6-下划线"><a href="#1-6-下划线" class="headerlink" title="1.6 下划线"></a>1.6 下划线</h2><p>快捷键是 Ctrl+u</p>
+<p>也可以 <u><u>下划线内容</u></u></p>
+<h2 id="1-7-文本居中"><a href="#1-7-文本居中" class="headerlink" title="1.7 文本居中"></a>1.7 文本居中</h2><p>操作是 <center> 居中的内容 </center>，下面是示例</p>
+<center>用center居中啦</center>
+
+<h2 id="1-8-文字高亮"><a href="#1-8-文字高亮" class="headerlink" title="1.8 文字高亮"></a>1.8 文字高亮</h2><p>高亮操作是 &#x3D;&#x3D; &#x3D;&#x3D;高亮文字&#x3D;&#x3D; &#x3D;&#x3D;</p>
+<h1 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h1><h2 id="2-1-有序列表"><a href="#2-1-有序列表" class="headerlink" title="2.1 有序列表"></a>2.1 有序列表</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：数字+英文小数点(.)+空格</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>第一个</li>
+<li>第二个</li>
+</ol>
+<h2 id="2-2-无序列表"><a href="#2-2-无序列表" class="headerlink" title="2.2 无序列表"></a>2.2 无序列表</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：- +空格 或 * + 空格</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>一个</li>
+<li>两个</li>
+</ul>
+<h1 id="3-插入"><a href="#3-插入" class="headerlink" title="3. 插入"></a>3. 插入</h1><h2 id="3-1-插入代码块"><a href="#3-1-插入代码块" class="headerlink" title="3.1 插入代码块"></a>3.1 插入代码块</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：shift+~~~``</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-2-插入链接"><a href="#3-2-插入链接" class="headerlink" title="3.2 插入链接"></a>3.2 插入链接</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操 作:Ctrl+k弹出后，输入 [输入标题名](输入链接地址) 即可</span><br><span class="line">示 例1：[这里是我的博客](https://cqcqcqy.github.io/)</span><br><span class="line">示 例2：这是 [百度一下，你就知道](https://www.baidu.com/ &quot;百度&quot;) 的链接.  </span><br><span class="line">示 例3：这是 [github][1] 的链接.  </span><br><span class="line">       [1]: https://github.com/ &quot;github&quot;</span><br><span class="line">ps：按住ctrl点击链接可直接打开</span><br></pre></td></tr></table></figure>
+
+<p><a href="%5BCQCQCQY%5D(https://cqcqcqy.github.io/)">这里是我的博客</a></p>
+<p>这是<a href="https://cqcqcqy.github.io/">百度</a>的链接</p>
+<p>这是[github][1]的链接.</p>
+<p>[1]: <a href="https://github.com/">https://github.com/</a>	“github”</p>
+<h2 id="3-3-插入图片"><a href="#3-3-插入图片" class="headerlink" title="3.3 插入图片"></a>3.3 插入图片</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：直接拖动  或 ctrl+shift+i(相对路径地址)</span><br><span class="line">示例：![](C:\1.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>![插入图片示例](D:\我的东西\壁纸\壁纸\image (23).jpg)</p>
+<h2 id="3-4-插入表格"><a href="#3-4-插入表格" class="headerlink" title="3.4 插入表格"></a>3.4 插入表格</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：ctrl+t</span><br><span class="line">示 例：按完快捷键后，弹出下图，选择对应的行和列，点击确定即可。</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-5-插入分隔符"><a href="#3-5-插入分隔符" class="headerlink" title="3.5 插入分隔符"></a>3.5 插入分隔符</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：--- + enter  或者 *** + enter</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<center>上面就是分隔符</center>
+
+<h2 id="3-6-插入表情"><a href="#3-6-插入表情" class="headerlink" title="3. 6 插入表情"></a>3. 6 插入表情</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作： ：+ 单词 +:</span><br><span class="line">示例： :smile:</span><br><span class="line">      :cry:</span><br></pre></td></tr></table></figure>
+
+<p>:smile:</p>
+<p>:cry:</p>
+<h2 id="3-7-插入目录"><a href="#3-7-插入目录" class="headerlink" title="3.7 插入目录"></a>3.7 插入目录</h2><p>操作：[toc]+enter</p>
+<p>[toc]</p>
+]]></content>
+      <categories>
+        <category>typora</category>
+      </categories>
+      <tags>
+        <tag>typora</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>github+hexo搭建个人博客</title>
     <url>/posts/85811f6c.html</url>
     <content><![CDATA[<p>[toc]</p>
@@ -91,111 +176,29 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo博客绑定到个人域名</title>
-    <url>/posts/56d0b0fe.html</url>
-    <content><![CDATA[<h1 id="1-购买域名"><a href="#1-购买域名" class="headerlink" title="1 购买域名"></a>1 购买域名</h1><p>推荐使用阿里云、腾讯云等</p>
-<h1 id="2-域名解析"><a href="#2-域名解析" class="headerlink" title="2 域名解析"></a>2 域名解析</h1><p>在阿里云里面使用域名解析</p>
-<p><img src="https://img-blog.csdnimg.cn/ab3d780261b34b62ae9cb74539e7fc18.png" alt="域名解析"></p>
-<p><img src="https://img-blog.csdnimg.cn/e5644ae1147a41188d352dd3513c44a4.png" alt="解析记录"></p>
-<h1 id="3-设置CNAME"><a href="#3-设置CNAME" class="headerlink" title="3 设置CNAME"></a>3 设置CNAME</h1><p>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。比如：cqcqcqy.cn</p>
-<p>在 github 上面，打开 username.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。比如：</p>
-<p><img src="https://img-blog.csdnimg.cn/b99c6c02003949a0bbd2a59fea65058c.png" alt="github里面绑定域名"></p>
-<p>至此，就可以访问你解析的域名啦~</p>
+    <title>vscode的一些使用问题和解决办法</title>
+    <url>/posts/e29a5ab5.html</url>
+    <content><![CDATA[<p><strong>问题1：vscode打开新的文件会覆盖窗口，只显示一个页面</strong></p>
+<p>shift+cltr+p打开设置，给你配置<code>settings.json</code>里加一条：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;workbench.editor.enablePreview&quot;</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdnimg.cn/8fbeb8e2bf21479db9e9798b076d0486.png" alt="解决多个tabs"></p>
+<p><strong>问题2：vscode使用Markdown</strong></p>
+<p>打开vscode安装markdown插件</p>
+<p><img src="https://img-blog.csdnimg.cn/7877c63a75504267854a04e124cd6b63.png" alt="markdown插件"></p>
+<p>然后就可以新建文件啦，选择Markdown语言</p>
+<p><img src="https://img-blog.csdnimg.cn/afa0bff6489d4d72ba38fb9908174762.png" alt="新建Markdown文件"></p>
+<p>打开预览模式</p>
+<p><img src="https://img-blog.csdnimg.cn/72cdaaa6214c46db977599d4b9cdb790.png" alt="Markdown实时预览"></p>
+<p><img src="https://img-blog.csdnimg.cn/379d697dbbc749ab998d0d8f568a17c4.png" alt="实时预览"></p>
 ]]></content>
       <categories>
-        <category>hexo</category>
+        <category>vscode</category>
+        <category>问题</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装jdk和idea</title>
-    <url>/posts/1c2a6d1d.html</url>
-    <content><![CDATA[<h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
-<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>
-<h3 id="配置-JAVA-HOME"><a href="#配置-JAVA-HOME" class="headerlink" title="配置 JAVA_HOME"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>JAVA_HOME</strong></font></h3><p>在<font face="微软雅黑" color=#FF0000 size=3> <strong>系统变量</strong></font>中，新建JAVA_HOME，然后把我们jdk的安装根目录放上去</p>
-<p><img src="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png" alt="java_home jdk根目录"></p>
-<h3 id="配置-Path"><a href="#配置-Path" class="headerlink" title="配置 Path"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>Path</strong></font></h3><p>在系统变量中，我们找到Path编辑，将刚刚新建的JAVA_HOME变量加上bin目录设置到PATH中，即是新建一个，添加上：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; </code></p>
-<p><img src="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png" alt="配置jdkpath"></p>
-<h3 id="检验jdk是否安装成功"><a href="#检验jdk是否安装成功" class="headerlink" title="检验jdk是否安装成功"></a>检验jdk是否安装成功</h3><p>打开cmd，输入<code>java -version</code><br><img src="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png" alt="java -version"><br>输入 <code>java</code><br><img src="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png" alt="java输入"><br>输入<code>javac</code><br><img src="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png" alt="输入javac"><br>若都以上三种相关信息，则说明jdk安装成功；如果没有出现以上情况，可以重新检查一下配置环境那里。</p>
-<h1 id="下载安装idea"><a href="#下载安装idea" class="headerlink" title="下载安装idea"></a>下载安装idea</h1><h2 id="idea下载和安装可以参考这篇文章"><a href="#idea下载和安装可以参考这篇文章" class="headerlink" title="idea下载和安装可以参考这篇文章"></a><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">idea下载和安装可以参考这篇文章</a></h2><p><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">https://blog.csdn.net/CQCQCQY/article/details/121300830</a></p>
-<h1 id="IDEA如何进行debug调试"><a href="#IDEA如何进行debug调试" class="headerlink" title="IDEA如何进行debug调试"></a>IDEA如何进行debug调试</h1><p><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">debug参考链接：</a><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">https://blog.csdn.net/mjh1667002013/article/details/114750192</a></p>
-<h1 id="IDEA创建项目的三种方式"><a href="#IDEA创建项目的三种方式" class="headerlink" title="IDEA创建项目的三种方式"></a>IDEA创建项目的三种方式</h1><p><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">创建项目：</a><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">https://blog.csdn.net/weixin_50034122/article/details/118754521</a></p>
-]]></content>
-      <categories>
-        <category>安装下载</category>
-      </categories>
-      <tags>
-        <tag>idea</tag>
-        <tag>jdk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>typora语法</title>
-    <url>/posts/3a526c11.html</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1 id="1-字体编辑"><a href="#1-字体编辑" class="headerlink" title="1.字体编辑"></a>1.字体编辑</h1><h2 id="1-1-标题"><a href="#1-1-标题" class="headerlink" title="1.1 标题"></a>1.1 标题</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line"># 一级标题 快捷键Ctrl+1</span><br><span class="line">## 二级标题 快捷键Ctrl+2</span><br><span class="line">### 三级标题 快捷键Ctrl+3</span><br><span class="line">#### 四级标题 快捷键Ctrl+4</span><br><span class="line">##### 五级标题 快捷键Ctrl+5</span><br><span class="line">###### 六级标题 快捷键Ctrl+6</span><br></pre></td></tr></table></figure>
-
-<h2 id="1-2-字体大小"><a href="#1-2-字体大小" class="headerlink" title="1.2 字体大小"></a>1.2 字体大小</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：Ctrl+数字</span><br></pre></td></tr></table></figure>
-
-<p>例如：我的字体是10</p>
-<h2 id="1-3-字体加粗"><a href="#1-3-字体加粗" class="headerlink" title="1.3 字体加粗"></a>1.3 字体加粗</h2><p><strong>加粗的快捷键是 Ctrl+b</strong></p>
-<p>也可以是** <strong>加粗内容</strong> **</p>
-<h2 id="1-4-斜体"><a href="#1-4-斜体" class="headerlink" title="1.4 斜体"></a>1.4 斜体</h2><p>斜体的操作是  * <em>斜体的内容</em> *</p>
-<h2 id="1-5-删除线"><a href="#1-5-删除线" class="headerlink" title="1.5 删除线"></a>1.5 删除线</h2><p>删除线的操作是 ~~ <del>删除的内容</del> ~~</p>
-<h2 id="1-6-下划线"><a href="#1-6-下划线" class="headerlink" title="1.6 下划线"></a>1.6 下划线</h2><p>快捷键是 Ctrl+u</p>
-<p>也可以 <u><u>下划线内容</u></u></p>
-<h2 id="1-7-文本居中"><a href="#1-7-文本居中" class="headerlink" title="1.7 文本居中"></a>1.7 文本居中</h2><p>操作是 <center> 居中的内容 </center>，下面是示例</p>
-<center>用center居中啦</center>
-
-<h2 id="1-8-文字高亮"><a href="#1-8-文字高亮" class="headerlink" title="1.8 文字高亮"></a>1.8 文字高亮</h2><p>高亮操作是 &#x3D;&#x3D; &#x3D;&#x3D;高亮文字&#x3D;&#x3D; &#x3D;&#x3D;</p>
-<h1 id="2-列表"><a href="#2-列表" class="headerlink" title="2. 列表"></a>2. 列表</h1><h2 id="2-1-有序列表"><a href="#2-1-有序列表" class="headerlink" title="2.1 有序列表"></a>2.1 有序列表</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：数字+英文小数点(.)+空格</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>第一个</li>
-<li>第二个</li>
-</ol>
-<h2 id="2-2-无序列表"><a href="#2-2-无序列表" class="headerlink" title="2.2 无序列表"></a>2.2 无序列表</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：- +空格 或 * + 空格</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>一个</li>
-<li>两个</li>
-</ul>
-<h1 id="3-插入"><a href="#3-插入" class="headerlink" title="3. 插入"></a>3. 插入</h1><h2 id="3-1-插入代码块"><a href="#3-1-插入代码块" class="headerlink" title="3.1 插入代码块"></a>3.1 插入代码块</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：shift+~~~``</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-2-插入链接"><a href="#3-2-插入链接" class="headerlink" title="3.2 插入链接"></a>3.2 插入链接</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操 作:Ctrl+k弹出后，输入 [输入标题名](输入链接地址) 即可</span><br><span class="line">示 例1：[这里是我的博客](https://cqcqcqy.github.io/)</span><br><span class="line">示 例2：这是 [百度一下，你就知道](https://www.baidu.com/ &quot;百度&quot;) 的链接.  </span><br><span class="line">示 例3：这是 [github][1] 的链接.  </span><br><span class="line">       [1]: https://github.com/ &quot;github&quot;</span><br><span class="line">ps：按住ctrl点击链接可直接打开</span><br></pre></td></tr></table></figure>
-
-<p><a href="%5BCQCQCQY%5D(https://cqcqcqy.github.io/)">这里是我的博客</a></p>
-<p>这是<a href="https://cqcqcqy.github.io/">百度</a>的链接</p>
-<p>这是[github][1]的链接.</p>
-<p>[1]: <a href="https://github.com/">https://github.com/</a>	“github”</p>
-<h2 id="3-3-插入图片"><a href="#3-3-插入图片" class="headerlink" title="3.3 插入图片"></a>3.3 插入图片</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：直接拖动  或 ctrl+shift+i(相对路径地址)</span><br><span class="line">示例：![](C:\1.jpg)</span><br></pre></td></tr></table></figure>
-
-<p>![插入图片示例](D:\我的东西\壁纸\壁纸\image (23).jpg)</p>
-<h2 id="3-4-插入表格"><a href="#3-4-插入表格" class="headerlink" title="3.4 插入表格"></a>3.4 插入表格</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">快捷键：ctrl+t</span><br><span class="line">示 例：按完快捷键后，弹出下图，选择对应的行和列，点击确定即可。</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-5-插入分隔符"><a href="#3-5-插入分隔符" class="headerlink" title="3.5 插入分隔符"></a>3.5 插入分隔符</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作：--- + enter  或者 *** + enter</span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<center>上面就是分隔符</center>
-
-<h2 id="3-6-插入表情"><a href="#3-6-插入表情" class="headerlink" title="3. 6 插入表情"></a>3. 6 插入表情</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">操作： ：+ 单词 +:</span><br><span class="line">示例： :smile:</span><br><span class="line">      :cry:</span><br></pre></td></tr></table></figure>
-
-<p>:smile:</p>
-<p>:cry:</p>
-<h2 id="3-7-插入目录"><a href="#3-7-插入目录" class="headerlink" title="3.7 插入目录"></a>3.7 插入目录</h2><p>操作：[toc]+enter</p>
-<p>[toc]</p>
-]]></content>
-      <categories>
-        <category>typora</category>
-      </categories>
-      <tags>
-        <tag>typora</tag>
+        <tag>vscode</tag>
+        <tag>问题</tag>
       </tags>
   </entry>
   <entry>
@@ -278,6 +281,29 @@
         <tag>nodejs</tag>
         <tag>npm</tag>
         <tag>express</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装jdk和idea</title>
+    <url>/posts/1c2a6d1d.html</url>
+    <content><![CDATA[<h1 id="jdk的下载、安装和配置"><a href="#jdk的下载、安装和配置" class="headerlink" title="jdk的下载、安装和配置"></a>jdk的下载、安装和配置</h1><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>到jdk官网下载对应的版本：<br><a href="https://www.oracle.com/java/technologies/downloads/archive/">官网：</a><a href="https://www.oracle.com/java/technologies/downloads/archive/">https://www.oracle.com/java/technologies/downloads/archive/</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装一直点next就可以，期间可以<font face="微软雅黑" color=#FF0000 size=3> <strong>更改jdk的安装目录：</strong></font>，这个安装目录需要在配置系统环境的时候用上。<br>例如，我的安装路径是<code>C:\jdk</code></p>
+<h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>修改环境变量的方法是：（我的电脑）→右键属性→高级系统设置→环境变量<br><img src="https://img-blog.csdnimg.cn/bb8fd13d8d9c4b25901d35b08313563f.png" alt="高级系统设置"></p>
+<h3 id="配置-JAVA-HOME"><a href="#配置-JAVA-HOME" class="headerlink" title="配置 JAVA_HOME"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>JAVA_HOME</strong></font></h3><p>在<font face="微软雅黑" color=#FF0000 size=3> <strong>系统变量</strong></font>中，新建JAVA_HOME，然后把我们jdk的安装根目录放上去</p>
+<p><img src="https://img-blog.csdnimg.cn/92b4c85024914df7aa46fddea465f4b6.png" alt="java_home jdk根目录"></p>
+<h3 id="配置-Path"><a href="#配置-Path" class="headerlink" title="配置 Path"></a>配置<font face="微软雅黑" color=#FF0000 size=3> <strong>Path</strong></font></h3><p>在系统变量中，我们找到Path编辑，将刚刚新建的JAVA_HOME变量加上bin目录设置到PATH中，即是新建一个，添加上：<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin; </code></p>
+<p><img src="https://img-blog.csdnimg.cn/6651bd6687834d76942c0de2ae9367b6.png" alt="配置jdkpath"></p>
+<h3 id="检验jdk是否安装成功"><a href="#检验jdk是否安装成功" class="headerlink" title="检验jdk是否安装成功"></a>检验jdk是否安装成功</h3><p>打开cmd，输入<code>java -version</code><br><img src="https://img-blog.csdnimg.cn/4e6fd5780f2849a087349e92a545bf20.png" alt="java -version"><br>输入 <code>java</code><br><img src="https://img-blog.csdnimg.cn/d782986ccf214fa9932e60495fa10ad9.png" alt="java输入"><br>输入<code>javac</code><br><img src="https://img-blog.csdnimg.cn/46c8b066c8c6454f91c98ad242da139e.png" alt="输入javac"><br>若都以上三种相关信息，则说明jdk安装成功；如果没有出现以上情况，可以重新检查一下配置环境那里。</p>
+<h1 id="下载安装idea"><a href="#下载安装idea" class="headerlink" title="下载安装idea"></a>下载安装idea</h1><h2 id="idea下载和安装可以参考这篇文章"><a href="#idea下载和安装可以参考这篇文章" class="headerlink" title="idea下载和安装可以参考这篇文章"></a><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">idea下载和安装可以参考这篇文章</a></h2><p><a href="https://blog.csdn.net/CQCQCQY/article/details/121300830">https://blog.csdn.net/CQCQCQY/article/details/121300830</a></p>
+<h1 id="IDEA如何进行debug调试"><a href="#IDEA如何进行debug调试" class="headerlink" title="IDEA如何进行debug调试"></a>IDEA如何进行debug调试</h1><p><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">debug参考链接：</a><a href="https://blog.csdn.net/mjh1667002013/article/details/114750192">https://blog.csdn.net/mjh1667002013/article/details/114750192</a></p>
+<h1 id="IDEA创建项目的三种方式"><a href="#IDEA创建项目的三种方式" class="headerlink" title="IDEA创建项目的三种方式"></a>IDEA创建项目的三种方式</h1><p><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">创建项目：</a><a href="https://blog.csdn.net/weixin_50034122/article/details/118754521">https://blog.csdn.net/weixin_50034122/article/details/118754521</a></p>
+]]></content>
+      <categories>
+        <category>安装下载</category>
+      </categories>
+      <tags>
+        <tag>idea</tag>
+        <tag>jdk</tag>
       </tags>
   </entry>
 </search>
